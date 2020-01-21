@@ -24,6 +24,6 @@
     <!-- Annotated entity classes -->
     <mapping class="com.bea_dot_74.ituna.Player"/>
     <mapping class="com.bea_dot_74.ituna.AppTest"/>
-
+    <mapping class="com.bea_dot_74.ituna.Game"/>
   </session-factory>
 </hibernate-configuration>

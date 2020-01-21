@@ -1,7 +1,6 @@
 package com.bea_dot_74.ituna;
 
 import java.io.Serializable;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,8 +23,6 @@ public class Player implements Serializable {
     private Long id;
 
     private String name;
-
-    private String login;
 
     public Long getId() {
         return id;
