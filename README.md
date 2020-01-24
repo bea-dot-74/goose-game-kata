@@ -1,3 +1,11 @@
+# Compilazione
+- Scaricare il progetto ed importarlo nella IDE come progetto Maven
+- dalla directory radice lanciare  il comando: mvn package
+# Esecuzione
+- lanciare il comando: java -cp target/goose-game-kata-1.0-SNAPSHOT.jar  com.bea_dot_74.ituna.GooseGame
+
+####################################################################################################
+
 # The Goose Game Kata
 Goose game is a game where two or more players move pieces around a track by rolling a die. The aim of the game is to reach square number sixty-three before any of the other players and avoid obstacles. ([wikipedia](https://en.wikipedia.org/wiki/Game_of_the_Goose))
 
