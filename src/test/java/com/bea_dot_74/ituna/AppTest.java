@@ -1,8 +1,6 @@
 package com.bea_dot_74.ituna;
 
-import junit.framework.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -19,7 +17,9 @@ public class AppTest
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-        Player user = new Player("firstplayer");
+      Player user = new Player();
+      user.setName("Test player");
+      user.setPosizione(0);
         session.save(user);
 
         session.getTransaction().commit();

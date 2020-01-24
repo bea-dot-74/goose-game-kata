@@ -9,20 +9,14 @@ import javax.persistence.Id;
 @Entity
 public class Player implements Serializable {
 
-    public Player() {
-
-    };
-
-    public Player(String name) {
-        this.name = name;
-
-    };
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
+
+    private Integer posizione;
+
 
     public Long getId() {
         return id;
@@ -38,5 +32,29 @@ public class Player implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String toString() {
+        return name + ", posizione " + posizione;
+    }
+
+    public Integer getPosizione() {
+        return posizione;
+    }
+
+    public void setPosizione(Integer posizione) {
+        this.posizione = posizione;
+    }
+
+    @Override
+    public boolean equals(Object player) {
+        if (player == this) {
+            return true;
+        }
+        if (!(player instanceof Player)) {
+            return false;
+        }
+
+        return name.equals(((Player) player).getName());
     }
 }
